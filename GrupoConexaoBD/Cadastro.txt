@@ -1,0 +1,18 @@
+drop database if exists Cadastro;
+Create database Cadastro;
+
+Use Cadastro;
+
+Create table Aluno(
+id_aluno int not null auto_increment,
+nome_aluno varchar(30),
+email_aluno varchar(60),
+telefone_aluno varchar(11),
+sexo_aluno varchar(10),
+idade_aluno int(5),
+curso_aluno varchar(20),
+senha_aluno varchar(20),
+primary key (id_aluno)
+);
+
+insert into Aluno (nome_aluno, email_aluno, telefone_aluno, sexo_aluno, idade_aluno, curso_aluno, senha_aluno) values ( "João Pinto", "joãopinto123@gmail.com", "11941736903", "Masculino", "25", "História", '123456789');
